@@ -32,10 +32,10 @@ List_nthreads = {
     NAME_WEBSERVER : ["1", "2", "4", "8"]
 }
 List_nfiles = {
-    NAME_FILESERVER: ["1k"],# "800k", "3200k"],
-    NAME_VALMAIL   : ["1k"],# "800k", "8m"],
-    NAME_WEBPROXY  : ["1k"],# "800k", "8m"],
-    NAME_WEBSERVER : ["1k"]# "800k", "4m"]
+    NAME_FILESERVER: ["100k", "400k"],
+    NAME_VALMAIL   : ["100k", "1m"],
+    NAME_WEBPROXY  : ["100k", "1m"],
+    NAME_WEBSERVER : ["100k", "500k"]
 }
 List_Runtime = {
     NAME_FILESERVER: [60],
@@ -60,7 +60,7 @@ def genworkload(expname, dir):
     if not os.path.exists(rdir):
         os.makedirs(rdir)
     
-    sdir = f"sripts"
+    sdir = f"scripts"
     if not os.path.exists(sdir):
         os.makedirs(sdir)
     
