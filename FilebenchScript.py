@@ -48,24 +48,25 @@ List_Runtime = {
 def getWfilename(en, wn, nt, nf):
     return f"{en}/{wn}_{nt}T_{nf}F.f"
 
-def genworkload(expname, dir):
+def genworkload(expname, dir, clear):
     ScriptTxt = ""
     
-    
     wdir = f"workloads/{expname}"
+    rdir = f"results/{expname}"
+    sdir = f"scripts"
+    
+
     if not os.path.exists(wdir):
         os.makedirs(wdir)
     
-    rdir = f"results/{expname}"
     if not os.path.exists(rdir):
         os.makedirs(rdir)
     
-    sdir = f"scripts"
     if not os.path.exists(sdir):
         os.makedirs(sdir)
     
     for wname in workloads:
-        for nt in List_nthreads:        
+        for nt in List_nthreads[wname]:        
             for nf in List_nfiles[wname]:
                 for rt in List_Runtime[wname]:
 
@@ -156,7 +157,7 @@ def main():
     }
     
     for expr in Elist:
-        genworkload(expr, dirlist[expr])    
+        genworkload(expr, dirlist[expr], True)    
     
     
     # for wn in workloads:
