@@ -32,10 +32,10 @@ List_nthreads = {
     NAME_WEBSERVER : ["1", "2", "4", "8"]
 }
 List_nfiles = {
-    NAME_FILESERVER: ["100k", "400k"],
-    NAME_VALMAIL   : ["100k", "1m"],
-    NAME_WEBPROXY  : ["100k", "1m"],
-    NAME_WEBSERVER : ["100k", "500k"]
+    NAME_FILESERVER: ["100k", "200k"],
+    NAME_VALMAIL   : ["100k", "500k"],
+    NAME_WEBPROXY  : ["100k", "500k"],
+    NAME_WEBSERVER : ["100k", "250k"]
 }
 List_Runtime = {
     NAME_FILESERVER: [60],
