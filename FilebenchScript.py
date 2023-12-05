@@ -150,13 +150,13 @@ def plot(wname, explist):
 
 def main():
     
-    Elist = ["ext4", "ext4min"]
+    Elist = ["ext4", "ext4min2"]
     dirlist = {
         Elist[0] : "/mnt/ext4",
         Elist[1] : "/mnt/ext4min"
     }
     
-    for expr in Elist:
+    for expr in Elist[-1:]:
         genworkload(expr, dirlist[expr], True)    
     
     
