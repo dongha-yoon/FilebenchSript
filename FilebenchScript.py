@@ -152,8 +152,8 @@ def main():
     
     Elist = ["ramdisk", "ramdisk_min", "ext4", "ext4min2"]
     dirlist = {
-        Elist[0] : "/mnt/ramdisk",
-        Elist[1] : "/mnt/ramdiskmin",
+        Elist[0] : "/mnt/ramdisk_x86",
+        Elist[1] : "/mnt/ramdiskmin_x86",
         Elist[2] : "/mnt/ext4",
         Elist[3] : "/mnt/ext4min"
     }
