@@ -150,10 +150,10 @@ def plot(wname, explist):
 
 def main():
     
-    Elist = ["ramdisk", "ramdisk_min", "ext4", "ext4min2"]
+    Elist = ["ramdisk_x86", "ramdisk_min_x86", "ext4", "ext4min2"]
     dirlist = {
-        Elist[0] : "/mnt/ramdisk_x86",
-        Elist[1] : "/mnt/ramdiskmin_x86",
+        Elist[0] : "/mnt/ramdisk_",
+        Elist[1] : "/mnt/ramdiskmin",
         Elist[2] : "/mnt/ext4",
         Elist[3] : "/mnt/ext4min"
     }
