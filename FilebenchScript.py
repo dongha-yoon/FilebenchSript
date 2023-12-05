@@ -156,7 +156,7 @@ def main():
         Elist[1] : "/mnt/ext4min"
     }
     
-    for expr in Elist[-1:]:
+    for expr in Elist:
         genworkload(expr, dirlist[expr], True)    
     
     
