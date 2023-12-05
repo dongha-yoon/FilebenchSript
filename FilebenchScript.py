@@ -32,10 +32,10 @@ List_nthreads = {
     NAME_WEBSERVER : ["1", "2", "4", "8"]
 }
 List_nfiles = {
-    NAME_FILESERVER: ["100k", "200k"],
-    NAME_VALMAIL   : ["100k", "500k"],
-    NAME_WEBPROXY  : ["100k", "500k"],
-    NAME_WEBSERVER : ["100k", "250k"]
+    NAME_FILESERVER: ["1k", "4k"],
+    NAME_VALMAIL   : ["1k", "10k"],
+    NAME_WEBPROXY  : ["1k", "10k"],
+    NAME_WEBSERVER : ["1k", "5k"]
 }
 List_Runtime = {
     NAME_FILESERVER: [60],
@@ -150,13 +150,15 @@ def plot(wname, explist):
 
 def main():
     
-    Elist = ["ext4", "ext4min2"]
+    Elist = ["ramdisk_x86", "ramdisk_min_x86", "ext4", "ext4min2"]
     dirlist = {
-        Elist[0] : "/mnt/ext4",
-        Elist[1] : "/mnt/ext4min"
+        Elist[0] : "/mnt/ramdisk_",
+        Elist[1] : "/mnt/ramdiskmin",
+        Elist[2] : "/mnt/ext4",
+        Elist[3] : "/mnt/ext4min"
     }
     
-    for expr in Elist[-1:]:
+    for expr in Elist:
         genworkload(expr, dirlist[expr], True)    
     
     
