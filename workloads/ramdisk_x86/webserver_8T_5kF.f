@@ -1,11 +1,11 @@
-set $dir=/mnt/ramdisk_
+set $dir=/mnt/ramdisk
 set $nfiles=5k
 set $nthreads=8
 set $meandirwidth=20
 set $filesize=cvar(type=cvar-gamma,parameters=mean:65536;gamma:1.5)
 set $iosize=1m
 set $meanappendsize=8k
-set $runtime=60
+set $runtime=7
 define fileset name=bigfileset,path=$dir,size=$filesize,entries=$nfiles,dirwidth=$meandirwidth,prealloc=100,readonly
 
 define fileset name=logfiles,path=$dir,size=$filesize,entries=1,dirwidth=$meandirwidth,prealloc

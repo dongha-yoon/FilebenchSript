@@ -1,11 +1,11 @@
-set $dir=/mnt/ramdisk_
+set $dir=/mnt/ramdisk
 set $nfiles=1k
 set $nthreads=2
 set $meandirwidth=20
 set $filesize=cvar(type=cvar-gamma,parameters=mean:131072;gamma:1.5)
 set $iosize=16k
 set $meanappendsize=16k
-set $runtime=60
+set $runtime=7
 define fileset name=bigfileset,path=$dir,size=$filesize,entries=$nfiles,dirwidth=$meandirwidth,prealloc=80
 
 
