@@ -38,10 +38,10 @@ List_nfiles = {
     NAME_WEBSERVER : ["1k", "5k"]
 }
 List_Runtime = {
-    NAME_FILESERVER: [60],
-    NAME_VALMAIL   : [60],
-    NAME_WEBPROXY  : [60],
-    NAME_WEBSERVER : [60]
+    NAME_FILESERVER: [7],
+    NAME_VALMAIL   : [7],
+    NAME_WEBPROXY  : [7],
+    NAME_WEBSERVER : [7]
 }
 
 
@@ -158,7 +158,7 @@ def main():
         Elist[3] : "/mnt/ext4min"
     }
     
-    for expr in Elist:
+    for expr in Elist[1:2]:
         genworkload(expr, dirlist[expr], True)    
     
     
