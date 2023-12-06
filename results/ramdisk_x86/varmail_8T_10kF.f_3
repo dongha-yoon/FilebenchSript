@@ -5,25 +5,25 @@ Filebench Version 1.5-alpha3
 0.006: bigfileset populated: 10240 files, avg. dir. width = 1000000, avg. dir. depth = 0.7, 0 leafdirs, 316.008MB total size
 0.006: Removing bigfileset tree (if exists)
 0.008: Pre-allocating directories in bigfileset tree
-0.008: Pre-allocating files in bigfileset tree
-0.202: Waiting for pre-allocation to finish (in case of a parallel pre-allocation)
-0.202: Population and pre-allocation of filesets completed
-0.203: Starting 1 filereader instances
-1.206: Running...
-8.207: Run took 7 seconds...
-8.208: Per-Operation Breakdown
-closefile4           3151ops      450ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.014ms]
-readfile4            3151ops      450ops/s  12.9mb/s    0.227ms/op [0.007ms - 7.559ms]
-openfile4            3151ops      450ops/s   0.0mb/s    0.020ms/op [0.003ms - 0.130ms]
-closefile3           3151ops      450ops/s   0.0mb/s    0.007ms/op [0.001ms - 0.033ms]
-fsyncfile3           3151ops      450ops/s   0.0mb/s    8.574ms/op [3.429ms - 38.154ms]
-appendfilerand3      3158ops      451ops/s   3.5mb/s    0.053ms/op [0.004ms - 6.081ms]
-readfile3            3158ops      451ops/s  13.5mb/s    0.182ms/op [0.007ms - 6.425ms]
-openfile3            3158ops      451ops/s   0.0mb/s    0.020ms/op [0.004ms - 0.099ms]
-closefile2           3158ops      451ops/s   0.0mb/s    0.006ms/op [0.001ms - 0.025ms]
-fsyncfile2           3158ops      451ops/s   0.0mb/s    8.258ms/op [4.149ms - 36.843ms]
-appendfilerand2      3159ops      451ops/s   3.5mb/s    0.036ms/op [0.009ms - 5.223ms]
-createfile2          3159ops      451ops/s   0.0mb/s    0.091ms/op [0.015ms - 5.472ms]
-deletefile1          3159ops      451ops/s   0.0mb/s    0.104ms/op [0.037ms - 6.107ms]
-8.208: IO Summary: 41022 ops 5859.612 ops/s 901/902 rd/wr  33.4mb/s 1.352ms/op
-8.208: Shutting down processes
+0.009: Pre-allocating files in bigfileset tree
+0.204: Waiting for pre-allocation to finish (in case of a parallel pre-allocation)
+0.204: Population and pre-allocation of filesets completed
+0.204: Starting 1 filereader instances
+1.208: Running...
+8.209: Run took 7 seconds...
+8.209: Per-Operation Breakdown
+closefile4           52651ops     7521ops/s   0.0mb/s    0.001ms/op [0.001ms - 0.029ms]
+readfile4            52651ops     7521ops/s 134.8mb/s    0.027ms/op [0.001ms - 0.375ms]
+openfile4            52651ops     7521ops/s   0.0mb/s    0.008ms/op [0.003ms - 0.166ms]
+closefile3           52651ops     7521ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.039ms]
+fsyncfile3           52652ops     7521ops/s   0.0mb/s    0.333ms/op [0.020ms - 0.721ms]
+appendfilerand3      52653ops     7521ops/s  58.7mb/s    0.030ms/op [0.003ms - 0.426ms]
+readfile3            52654ops     7521ops/s 133.5mb/s    0.026ms/op [0.002ms - 0.371ms]
+openfile3            52654ops     7521ops/s   0.0mb/s    0.008ms/op [0.003ms - 0.163ms]
+closefile2           52654ops     7521ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.033ms]
+fsyncfile2           52658ops     7522ops/s   0.0mb/s    0.322ms/op [0.115ms - 5.316ms]
+appendfilerand2      52659ops     7522ops/s  58.9mb/s    0.035ms/op [0.005ms - 0.478ms]
+createfile2          52659ops     7522ops/s   0.0mb/s    0.069ms/op [0.012ms - 0.664ms]
+deletefile1          52659ops     7522ops/s   0.0mb/s    0.116ms/op [0.023ms - 0.677ms]
+8.209: IO Summary: 684506 ops 97779.797 ops/s 15043/15044 rd/wr 385.9mb/s 0.075ms/op
+8.209: Shutting down processes

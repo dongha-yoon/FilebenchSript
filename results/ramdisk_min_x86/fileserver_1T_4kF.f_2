@@ -11,17 +11,17 @@ Filebench Version 1.5-alpha3
 0.184: Starting 1 filereader instances
 1.187: Running...
 8.188: Run took 7 seconds...
-8.189: Per-Operation Breakdown
-statfile1            46658ops     6665ops/s   0.0mb/s    0.001ms/op [0.001ms - 0.068ms]
-deletefile1          46658ops     6665ops/s   0.0mb/s    0.024ms/op [0.006ms - 0.154ms]
-closefile3           46658ops     6665ops/s   0.0mb/s    0.001ms/op [0.000ms - 0.076ms]
-readfile1            46658ops     6665ops/s 818.8mb/s    0.027ms/op [0.001ms - 0.205ms]
-openfile2            46658ops     6665ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.110ms]
-closefile2           46658ops     6665ops/s   0.0mb/s    0.000ms/op [0.001ms - 0.036ms]
-appendfilerand1      46658ops     6665ops/s  52.2mb/s    0.007ms/op [0.002ms - 0.085ms]
-openfile1            46658ops     6665ops/s   0.0mb/s    0.003ms/op [0.001ms - 0.161ms]
-closefile1           46658ops     6665ops/s   0.0mb/s    0.000ms/op [0.000ms - 0.065ms]
-wrtfile1             46659ops     6665ops/s 849.2mb/s    0.061ms/op [0.002ms - 290.922ms]
-createfile1          46659ops     6665ops/s   0.0mb/s    0.007ms/op [0.004ms - 0.099ms]
-8.190: IO Summary: 513240 ops 73310.941 ops/s 6665/13329 rd/wr 1720.2mb/s 0.012ms/op
-8.190: Shutting down processes
+8.188: Per-Operation Breakdown
+statfile1            47610ops     6801ops/s   0.0mb/s    0.001ms/op [0.001ms - 0.208ms]
+deletefile1          47610ops     6801ops/s   0.0mb/s    0.023ms/op [0.006ms - 0.161ms]
+closefile3           47610ops     6801ops/s   0.0mb/s    0.001ms/op [0.000ms - 0.056ms]
+readfile1            47610ops     6801ops/s 835.6mb/s    0.025ms/op [0.001ms - 0.192ms]
+openfile2            47610ops     6801ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.093ms]
+closefile2           47610ops     6801ops/s   0.0mb/s    0.000ms/op [0.001ms - 0.041ms]
+appendfilerand1      47610ops     6801ops/s  53.3mb/s    0.007ms/op [0.002ms - 0.383ms]
+openfile1            47611ops     6801ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.079ms]
+closefile1           47611ops     6801ops/s   0.0mb/s    0.000ms/op [0.000ms - 0.070ms]
+wrtfile1             47611ops     6801ops/s 866.4mb/s    0.059ms/op [0.002ms - 236.648ms]
+createfile1          47611ops     6801ops/s   0.0mb/s    0.007ms/op [0.004ms - 0.116ms]
+8.188: IO Summary: 523714 ops 74807.544 ops/s 6801/13601 rd/wr 1755.3mb/s 0.012ms/op
+8.188: Shutting down processes
