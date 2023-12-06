@@ -175,7 +175,7 @@ def main():
     
     
     
-    for expr in Elist[1:2]:
+    for expr in Elist:
         genworkload(expr, dirlist[expr], True)    
     
     Elist = ["ramdisk_arm", "ramdisk_min_arm", "ramdisk_x86", "ramdisk_min_x86", "ext4", "ext4min2"]
