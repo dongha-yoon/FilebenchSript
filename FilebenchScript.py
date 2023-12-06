@@ -45,6 +45,13 @@ List_Runtime = {
 }
 
 
+List_nfiles_ssd = {
+    NAME_FILESERVER: ["100k", "200k"],
+    NAME_VALMAIL   : ["100k", "5m"],
+    NAME_WEBPROXY  : ["100k", "5m"],
+    NAME_WEBSERVER : ["100k", "250k"]
+}
+
 def getWfilename(en, wn, nt, nf):
     return f"{en}/{wn}_{nt}T_{nf}F.f"
 
@@ -93,15 +100,24 @@ def genworkload(expname, dir, clear):
 def plot(wname, explist):
     TP = []
     BW = []
-    for nf in List_nfiles[wname]:   
+    iii = -1
+    
+    LF = List_nfiles[wname]
+    LNT = List_nthreads[wname]
+    
+    for nf in LF[:1]:   
+        iii += 1
         for en in explist:
+            if en[0] == 'e':
+                nf = (List_nfiles_ssd[wname])[iii]
+            
             t = []
             b = []
-            for nt in List_nthreads[wname]:    
+            for nt in LNT:    
                 throughput = 0
                 bandwidth = 0
                 for tr in range(1,Ntry+1):
-                    fname = f"results/{getWfilename(en,wname,nt,nf)}"
+                    fname = f"results/{getWfilename(en,wname,nt,nf)}_{tr}"
                     f = open(fname, "r")
                     res = f.readlines()[-2]
                     res = re.findall("\d+\.\d+", res)
@@ -116,16 +132,16 @@ def plot(wname, explist):
             BW.append(b)
         
     
-    idx = np.arange(len(List_nthreads))
-    width = 0.25
+    idx = np.arange(len(LNT))
+    width = 1/(len(TP)+1)
     plt.title(wname)
     for i in range(len(TP)):
         Y = np.array(TP[i])
-        plt.bar(idx+(i)*width, Y/1000., width=width, label=f"{explist[i]}")
+        plt.bar(idx+(i-len(TP)/4)*width, Y/1000., width=width, label=f"{explist[i]}")
     
     # plt.axhline(NOVA_t[wname], label="NOVA PCM-large", color='r', linestyle='--')
     
-    plt.xticks(idx+width, List_nthreads)
+    plt.xticks(idx+width, LNT)
     plt.xlabel("# threads")
     plt.ylabel("Throughput (Kops/s)")
     plt.legend()
@@ -137,33 +153,35 @@ def plot(wname, explist):
     plt.title(wname)
     for i in range(len(BW)):
         Y = np.array(BW[i])
-        plt.bar(idx+(i)*width, Y/1000., width=width, label=f"{explist[i]}")
+        plt.bar(idx+(i-len(TP)/4)*width, Y/1000., width=width, label=f"{explist[i]}")
     
-    plt.xticks(idx+width, List_nthreads)
+    plt.xticks(idx+width, LNT)
     plt.xlabel("# threads")
     plt.ylabel("Bandwidth (GB/s)")
     plt.legend()
-    # plt.show()        
+    plt.show()
     # plt.savefig(f"plots/{wname}_b.png")
     plt.clf()
 
 
 def main():
-    
-    Elist = ["ramdisk_x86", "ramdisk_min_x86", "ext4", "ext4min2"]
+    Elist = ["ramdisk_x86", "ramdisk_min_x86", "ext4", "ext4min2"] 
     dirlist = {
-        Elist[0] : "/mnt/ramdisk_",
+        Elist[0] : "/mnt/ramdisk",
         Elist[1] : "/mnt/ramdiskmin",
         Elist[2] : "/mnt/ext4",
         Elist[3] : "/mnt/ext4min"
     }
     
+    
+    
     for expr in Elist[1:2]:
         genworkload(expr, dirlist[expr], True)    
     
+    Elist = ["ramdisk_arm", "ramdisk_min_arm", "ramdisk_x86", "ramdisk_min_x86", "ext4", "ext4min2"]
     
     # for wn in workloads:
-    #     plot(wn, )
+    #     plot(wn, Elist)
     
     
 main()
