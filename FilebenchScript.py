@@ -87,10 +87,10 @@ def genworkload(expname, dir, clear):
 
                     ww = f"\tfilebench -f workloads/{wfileName} > results/{getWfilename(expname, wname, nt, nf)}"+"_${i}"
                     ScriptTxt += f"\techo \"{ww}\"\n"
-                    ScriptTxt += f"\techo \"{cnt} {ww}\" >> Lognum.txt\n"
-                    ScriptTxt += f"\tcxl read-labels mem0 -s 13\n"
+                    # ScriptTxt += f"\techo \"{cnt} {ww}\" >> Lognum.txt\n"
+                    # ScriptTxt += f"\tcxl read-labels mem0 -s 13\n"
                     ScriptTxt += f"{ww}\n"
-                    ScriptTxt += f"\tcxl read-labels mem0 -s 15\n"
+                    # ScriptTxt += f"\tcxl read-labels mem0 -s 15\n"
                     ScriptTxt += f"\trm -rf {dir}/*\n"
 
     f = open(f"{sdir}/run_{expname}.sh", "+w")
