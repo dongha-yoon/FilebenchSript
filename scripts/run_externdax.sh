@@ -33,62 +33,62 @@ do
 	echo "	filebench -f workloads/externdax/varmail_1T_100kF.f > results/externdax/varmail_1T_100kF.f_${i}"
 	filebench -f workloads/externdax/varmail_1T_100kF.f > results/externdax/varmail_1T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/varmail_1T_5mF.f > results/externdax/varmail_1T_5mF.f_${i}"
-	filebench -f workloads/externdax/varmail_1T_5mF.f > results/externdax/varmail_1T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/varmail_1T_800kF.f > results/externdax/varmail_1T_800kF.f_${i}"
+	filebench -f workloads/externdax/varmail_1T_800kF.f > results/externdax/varmail_1T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/varmail_4T_100kF.f > results/externdax/varmail_4T_100kF.f_${i}"
 	filebench -f workloads/externdax/varmail_4T_100kF.f > results/externdax/varmail_4T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/varmail_4T_5mF.f > results/externdax/varmail_4T_5mF.f_${i}"
-	filebench -f workloads/externdax/varmail_4T_5mF.f > results/externdax/varmail_4T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/varmail_4T_800kF.f > results/externdax/varmail_4T_800kF.f_${i}"
+	filebench -f workloads/externdax/varmail_4T_800kF.f > results/externdax/varmail_4T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/varmail_16T_100kF.f > results/externdax/varmail_16T_100kF.f_${i}"
 	filebench -f workloads/externdax/varmail_16T_100kF.f > results/externdax/varmail_16T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/varmail_16T_5mF.f > results/externdax/varmail_16T_5mF.f_${i}"
-	filebench -f workloads/externdax/varmail_16T_5mF.f > results/externdax/varmail_16T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/varmail_16T_800kF.f > results/externdax/varmail_16T_800kF.f_${i}"
+	filebench -f workloads/externdax/varmail_16T_800kF.f > results/externdax/varmail_16T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/varmail_32T_100kF.f > results/externdax/varmail_32T_100kF.f_${i}"
 	filebench -f workloads/externdax/varmail_32T_100kF.f > results/externdax/varmail_32T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/varmail_32T_5mF.f > results/externdax/varmail_32T_5mF.f_${i}"
-	filebench -f workloads/externdax/varmail_32T_5mF.f > results/externdax/varmail_32T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/varmail_32T_800kF.f > results/externdax/varmail_32T_800kF.f_${i}"
+	filebench -f workloads/externdax/varmail_32T_800kF.f > results/externdax/varmail_32T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/varmail_64T_100kF.f > results/externdax/varmail_64T_100kF.f_${i}"
 	filebench -f workloads/externdax/varmail_64T_100kF.f > results/externdax/varmail_64T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/varmail_64T_5mF.f > results/externdax/varmail_64T_5mF.f_${i}"
-	filebench -f workloads/externdax/varmail_64T_5mF.f > results/externdax/varmail_64T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/varmail_64T_800kF.f > results/externdax/varmail_64T_800kF.f_${i}"
+	filebench -f workloads/externdax/varmail_64T_800kF.f > results/externdax/varmail_64T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/webproxy_1T_100kF.f > results/externdax/webproxy_1T_100kF.f_${i}"
 	filebench -f workloads/externdax/webproxy_1T_100kF.f > results/externdax/webproxy_1T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/webproxy_1T_5mF.f > results/externdax/webproxy_1T_5mF.f_${i}"
-	filebench -f workloads/externdax/webproxy_1T_5mF.f > results/externdax/webproxy_1T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/webproxy_1T_800kF.f > results/externdax/webproxy_1T_800kF.f_${i}"
+	filebench -f workloads/externdax/webproxy_1T_800kF.f > results/externdax/webproxy_1T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/webproxy_4T_100kF.f > results/externdax/webproxy_4T_100kF.f_${i}"
 	filebench -f workloads/externdax/webproxy_4T_100kF.f > results/externdax/webproxy_4T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/webproxy_4T_5mF.f > results/externdax/webproxy_4T_5mF.f_${i}"
-	filebench -f workloads/externdax/webproxy_4T_5mF.f > results/externdax/webproxy_4T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/webproxy_4T_800kF.f > results/externdax/webproxy_4T_800kF.f_${i}"
+	filebench -f workloads/externdax/webproxy_4T_800kF.f > results/externdax/webproxy_4T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/webproxy_16T_100kF.f > results/externdax/webproxy_16T_100kF.f_${i}"
 	filebench -f workloads/externdax/webproxy_16T_100kF.f > results/externdax/webproxy_16T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/webproxy_16T_5mF.f > results/externdax/webproxy_16T_5mF.f_${i}"
-	filebench -f workloads/externdax/webproxy_16T_5mF.f > results/externdax/webproxy_16T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/webproxy_16T_800kF.f > results/externdax/webproxy_16T_800kF.f_${i}"
+	filebench -f workloads/externdax/webproxy_16T_800kF.f > results/externdax/webproxy_16T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/webproxy_32T_100kF.f > results/externdax/webproxy_32T_100kF.f_${i}"
 	filebench -f workloads/externdax/webproxy_32T_100kF.f > results/externdax/webproxy_32T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/webproxy_32T_5mF.f > results/externdax/webproxy_32T_5mF.f_${i}"
-	filebench -f workloads/externdax/webproxy_32T_5mF.f > results/externdax/webproxy_32T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/webproxy_32T_800kF.f > results/externdax/webproxy_32T_800kF.f_${i}"
+	filebench -f workloads/externdax/webproxy_32T_800kF.f > results/externdax/webproxy_32T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/webproxy_64T_100kF.f > results/externdax/webproxy_64T_100kF.f_${i}"
 	filebench -f workloads/externdax/webproxy_64T_100kF.f > results/externdax/webproxy_64T_100kF.f_${i}
 	rm -rf /mnt/externdax/*
-	echo "	filebench -f workloads/externdax/webproxy_64T_5mF.f > results/externdax/webproxy_64T_5mF.f_${i}"
-	filebench -f workloads/externdax/webproxy_64T_5mF.f > results/externdax/webproxy_64T_5mF.f_${i}
+	echo "	filebench -f workloads/externdax/webproxy_64T_800kF.f > results/externdax/webproxy_64T_800kF.f_${i}"
+	filebench -f workloads/externdax/webproxy_64T_800kF.f > results/externdax/webproxy_64T_800kF.f_${i}
 	rm -rf /mnt/externdax/*
 	echo "	filebench -f workloads/externdax/webserver_1T_100kF.f > results/externdax/webserver_1T_100kF.f_${i}"
 	filebench -f workloads/externdax/webserver_1T_100kF.f > results/externdax/webserver_1T_100kF.f_${i}

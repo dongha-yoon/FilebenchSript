@@ -47,8 +47,8 @@ List_Runtime = {
 
 List_nfiles_ssd = {
     NAME_FILESERVER: ["100k", "200k"],
-    NAME_VALMAIL   : ["100k", "5m"],
-    NAME_WEBPROXY  : ["100k", "5m"],
+    NAME_VALMAIL   : ["100k", "800k"],
+    NAME_WEBPROXY  : ["100k", "800k"],
     NAME_WEBSERVER : ["100k", "250k"]
 }
 

@@ -33,62 +33,62 @@ do
 	echo "	filebench -f workloads/ext4/varmail_1T_100kF.f > results/ext4/varmail_1T_100kF.f_${i}"
 	filebench -f workloads/ext4/varmail_1T_100kF.f > results/ext4/varmail_1T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/varmail_1T_5mF.f > results/ext4/varmail_1T_5mF.f_${i}"
-	filebench -f workloads/ext4/varmail_1T_5mF.f > results/ext4/varmail_1T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/varmail_1T_800kF.f > results/ext4/varmail_1T_800kF.f_${i}"
+	filebench -f workloads/ext4/varmail_1T_800kF.f > results/ext4/varmail_1T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/varmail_4T_100kF.f > results/ext4/varmail_4T_100kF.f_${i}"
 	filebench -f workloads/ext4/varmail_4T_100kF.f > results/ext4/varmail_4T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/varmail_4T_5mF.f > results/ext4/varmail_4T_5mF.f_${i}"
-	filebench -f workloads/ext4/varmail_4T_5mF.f > results/ext4/varmail_4T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/varmail_4T_800kF.f > results/ext4/varmail_4T_800kF.f_${i}"
+	filebench -f workloads/ext4/varmail_4T_800kF.f > results/ext4/varmail_4T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/varmail_16T_100kF.f > results/ext4/varmail_16T_100kF.f_${i}"
 	filebench -f workloads/ext4/varmail_16T_100kF.f > results/ext4/varmail_16T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/varmail_16T_5mF.f > results/ext4/varmail_16T_5mF.f_${i}"
-	filebench -f workloads/ext4/varmail_16T_5mF.f > results/ext4/varmail_16T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/varmail_16T_800kF.f > results/ext4/varmail_16T_800kF.f_${i}"
+	filebench -f workloads/ext4/varmail_16T_800kF.f > results/ext4/varmail_16T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/varmail_32T_100kF.f > results/ext4/varmail_32T_100kF.f_${i}"
 	filebench -f workloads/ext4/varmail_32T_100kF.f > results/ext4/varmail_32T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/varmail_32T_5mF.f > results/ext4/varmail_32T_5mF.f_${i}"
-	filebench -f workloads/ext4/varmail_32T_5mF.f > results/ext4/varmail_32T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/varmail_32T_800kF.f > results/ext4/varmail_32T_800kF.f_${i}"
+	filebench -f workloads/ext4/varmail_32T_800kF.f > results/ext4/varmail_32T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/varmail_64T_100kF.f > results/ext4/varmail_64T_100kF.f_${i}"
 	filebench -f workloads/ext4/varmail_64T_100kF.f > results/ext4/varmail_64T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/varmail_64T_5mF.f > results/ext4/varmail_64T_5mF.f_${i}"
-	filebench -f workloads/ext4/varmail_64T_5mF.f > results/ext4/varmail_64T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/varmail_64T_800kF.f > results/ext4/varmail_64T_800kF.f_${i}"
+	filebench -f workloads/ext4/varmail_64T_800kF.f > results/ext4/varmail_64T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/webproxy_1T_100kF.f > results/ext4/webproxy_1T_100kF.f_${i}"
 	filebench -f workloads/ext4/webproxy_1T_100kF.f > results/ext4/webproxy_1T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/webproxy_1T_5mF.f > results/ext4/webproxy_1T_5mF.f_${i}"
-	filebench -f workloads/ext4/webproxy_1T_5mF.f > results/ext4/webproxy_1T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/webproxy_1T_800kF.f > results/ext4/webproxy_1T_800kF.f_${i}"
+	filebench -f workloads/ext4/webproxy_1T_800kF.f > results/ext4/webproxy_1T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/webproxy_4T_100kF.f > results/ext4/webproxy_4T_100kF.f_${i}"
 	filebench -f workloads/ext4/webproxy_4T_100kF.f > results/ext4/webproxy_4T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/webproxy_4T_5mF.f > results/ext4/webproxy_4T_5mF.f_${i}"
-	filebench -f workloads/ext4/webproxy_4T_5mF.f > results/ext4/webproxy_4T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/webproxy_4T_800kF.f > results/ext4/webproxy_4T_800kF.f_${i}"
+	filebench -f workloads/ext4/webproxy_4T_800kF.f > results/ext4/webproxy_4T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/webproxy_16T_100kF.f > results/ext4/webproxy_16T_100kF.f_${i}"
 	filebench -f workloads/ext4/webproxy_16T_100kF.f > results/ext4/webproxy_16T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/webproxy_16T_5mF.f > results/ext4/webproxy_16T_5mF.f_${i}"
-	filebench -f workloads/ext4/webproxy_16T_5mF.f > results/ext4/webproxy_16T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/webproxy_16T_800kF.f > results/ext4/webproxy_16T_800kF.f_${i}"
+	filebench -f workloads/ext4/webproxy_16T_800kF.f > results/ext4/webproxy_16T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/webproxy_32T_100kF.f > results/ext4/webproxy_32T_100kF.f_${i}"
 	filebench -f workloads/ext4/webproxy_32T_100kF.f > results/ext4/webproxy_32T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/webproxy_32T_5mF.f > results/ext4/webproxy_32T_5mF.f_${i}"
-	filebench -f workloads/ext4/webproxy_32T_5mF.f > results/ext4/webproxy_32T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/webproxy_32T_800kF.f > results/ext4/webproxy_32T_800kF.f_${i}"
+	filebench -f workloads/ext4/webproxy_32T_800kF.f > results/ext4/webproxy_32T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/webproxy_64T_100kF.f > results/ext4/webproxy_64T_100kF.f_${i}"
 	filebench -f workloads/ext4/webproxy_64T_100kF.f > results/ext4/webproxy_64T_100kF.f_${i}
 	rm -rf /mnt/ext4/*
-	echo "	filebench -f workloads/ext4/webproxy_64T_5mF.f > results/ext4/webproxy_64T_5mF.f_${i}"
-	filebench -f workloads/ext4/webproxy_64T_5mF.f > results/ext4/webproxy_64T_5mF.f_${i}
+	echo "	filebench -f workloads/ext4/webproxy_64T_800kF.f > results/ext4/webproxy_64T_800kF.f_${i}"
+	filebench -f workloads/ext4/webproxy_64T_800kF.f > results/ext4/webproxy_64T_800kF.f_${i}
 	rm -rf /mnt/ext4/*
 	echo "	filebench -f workloads/ext4/webserver_1T_100kF.f > results/ext4/webserver_1T_100kF.f_${i}"
 	filebench -f workloads/ext4/webserver_1T_100kF.f > results/ext4/webserver_1T_100kF.f_${i}
