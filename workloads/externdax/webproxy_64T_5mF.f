@@ -1,5 +1,5 @@
 set $dir=/mnt/externdax
-set $nfiles=5m
+set $nfiles=800k
 set $nthreads=64
 set $meandirwidth=1000000
 set $meanfilesize=32k
