@@ -169,10 +169,11 @@ def plot(wname, explist):
 
 
 def main():
-    Elist = ["externdax", "ext4"] 
+    Elist = ["externdax", "ext4", "ext4dax"] 
     dirlist = {
         Elist[0] : "/mnt/externdax",
         Elist[1] : "/mnt/ext4",
+        Elist[2] : "/mnt/ext4dax",
     }
     
     
