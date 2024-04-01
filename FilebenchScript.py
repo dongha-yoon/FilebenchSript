@@ -169,7 +169,7 @@ def plot(wname, explist):
 
 
 def main():
-    Elist = ["externdax", "ext4", "ext4dax"] 
+    Elist = ["externdax__", "ext4__", "ext4dax__"] 
     dirlist = {
         Elist[0] : "/mnt/externdax",
         Elist[1] : "/mnt/ext4",
@@ -183,7 +183,7 @@ def main():
     # Elist = ["ramdisk_arm", "ramdisk_min_arm", "ramdisk_x86", "ramdisk_min_x86", "ext4", "ext4min2"]
     
     # for wn in workloads:
-    #     plot(wn, Elist)
+    #     plot(wn, Elist[:-1])
     
     
 main()
