@@ -6,24 +6,24 @@ Filebench Version 1.5-alpha3
 0.456: Removing bigfileset tree (if exists)
 0.458: Pre-allocating directories in bigfileset tree
 0.458: Pre-allocating files in bigfileset tree
-21.413: Waiting for pre-allocation to finish (in case of a parallel pre-allocation)
-21.413: Population and pre-allocation of filesets completed
-21.413: Starting 1 filereader instances
-22.418: Running...
-82.424: Run took 60 seconds...
-82.431: Per-Operation Breakdown
-closefile4           52725ops      879ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.037ms]
-readfile4            52725ops      879ops/s  27.5mb/s    2.333ms/op [0.005ms - 90.323ms]
-openfile4            52725ops      879ops/s   0.0mb/s    0.052ms/op [0.003ms - 15.887ms]
-closefile3           52725ops      879ops/s   0.0mb/s    0.006ms/op [0.001ms - 0.052ms]
-fsyncfile3           52725ops      879ops/s   0.0mb/s   14.484ms/op [2.029ms - 92.855ms]
-appendfilerand3      52733ops      879ops/s   6.9mb/s    0.123ms/op [0.003ms - 34.871ms]
-readfile3            52733ops      879ops/s  27.4mb/s    2.341ms/op [0.005ms - 90.385ms]
-openfile3            52733ops      879ops/s   0.0mb/s    0.044ms/op [0.003ms - 14.486ms]
-closefile2           52733ops      879ops/s   0.0mb/s    0.005ms/op [0.001ms - 0.044ms]
-fsyncfile2           52733ops      879ops/s   0.0mb/s   13.973ms/op [2.486ms - 288.200ms]
-appendfilerand2      52745ops      879ops/s   6.9mb/s    0.105ms/op [0.005ms - 74.898ms]
-createfile2          52747ops      879ops/s   0.0mb/s    0.746ms/op [0.017ms - 75.233ms]
-deletefile1          52755ops      879ops/s   0.0mb/s    1.846ms/op [0.025ms - 56.854ms]
-82.431: IO Summary: 685537 ops 11423.505 ops/s 1757/1758 rd/wr  68.7mb/s 2.774ms/op
-82.431: Shutting down processes
+21.320: Waiting for pre-allocation to finish (in case of a parallel pre-allocation)
+21.320: Population and pre-allocation of filesets completed
+21.320: Starting 1 filereader instances
+22.326: Running...
+82.331: Run took 60 seconds...
+82.334: Per-Operation Breakdown
+closefile4           58647ops      977ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.031ms]
+readfile4            58647ops      977ops/s  26.1mb/s    2.456ms/op [0.005ms - 83.485ms]
+openfile4            58650ops      977ops/s   0.0mb/s    0.040ms/op [0.003ms - 0.754ms]
+closefile3           58650ops      977ops/s   0.0mb/s    0.005ms/op [0.001ms - 0.051ms]
+fsyncfile3           58650ops      977ops/s   0.0mb/s   13.012ms/op [3.898ms - 127.166ms]
+appendfilerand3      58659ops      978ops/s   7.6mb/s    0.118ms/op [0.003ms - 53.859ms]
+readfile3            58659ops      978ops/s  25.8mb/s    2.094ms/op [0.005ms - 80.096ms]
+openfile3            58659ops      978ops/s   0.0mb/s    0.040ms/op [0.003ms - 0.656ms]
+closefile2           58659ops      978ops/s   0.0mb/s    0.006ms/op [0.001ms - 0.056ms]
+fsyncfile2           58659ops      978ops/s   0.0mb/s   13.021ms/op [4.159ms - 118.575ms]
+appendfilerand2      58679ops      978ops/s   7.6mb/s    0.123ms/op [0.005ms - 61.832ms]
+createfile2          58679ops      978ops/s   0.0mb/s    0.773ms/op [0.018ms - 77.654ms]
+deletefile1          58678ops      978ops/s   0.0mb/s    0.713ms/op [0.025ms - 77.680ms]
+82.334: IO Summary: 762575 ops 12708.519 ops/s 1955/1955 rd/wr  67.2mb/s 2.492ms/op
+82.334: Shutting down processes
