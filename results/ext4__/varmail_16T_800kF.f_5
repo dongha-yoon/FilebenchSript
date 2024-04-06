@@ -1,29 +1,29 @@
 Filebench Version 1.5-alpha3
 0.000: Allocated 177MB of shared memory
-0.001: Varmail Version 3.0 personality successfully loaded
-0.001: Populating and pre-allocating filesets
-0.456: bigfileset populated: 819200 files, avg. dir. width = 1000000, avg. dir. depth = 1.0, 0 leafdirs, 25634.444MB total size
-0.456: Removing bigfileset tree (if exists)
-0.458: Pre-allocating directories in bigfileset tree
-0.458: Pre-allocating files in bigfileset tree
-21.050: Waiting for pre-allocation to finish (in case of a parallel pre-allocation)
-21.050: Population and pre-allocation of filesets completed
-21.050: Starting 1 filereader instances
-22.054: Running...
-82.061: Run took 60 seconds...
-82.061: Per-Operation Breakdown
-closefile4           37529ops      625ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.022ms]
-readfile4            37529ops      625ops/s  16.6mb/s    1.559ms/op [0.005ms - 129.794ms]
-openfile4            37529ops      625ops/s   0.0mb/s    0.029ms/op [0.003ms - 0.491ms]
-closefile3           37529ops      625ops/s   0.0mb/s    0.006ms/op [0.001ms - 0.044ms]
-fsyncfile3           37529ops      625ops/s   0.0mb/s   10.634ms/op [3.646ms - 125.490ms]
-appendfilerand3      37536ops      626ops/s   4.9mb/s    0.150ms/op [0.003ms - 66.305ms]
-readfile3            37536ops      626ops/s  16.6mb/s    1.115ms/op [0.004ms - 94.803ms]
-openfile3            37536ops      626ops/s   0.0mb/s    0.029ms/op [0.002ms - 0.263ms]
-closefile2           37536ops      626ops/s   0.0mb/s    0.006ms/op [0.001ms - 0.044ms]
-fsyncfile2           37536ops      626ops/s   0.0mb/s   10.784ms/op [3.988ms - 121.002ms]
-appendfilerand2      37545ops      626ops/s   4.9mb/s    0.080ms/op [0.001ms - 66.384ms]
-createfile2          37545ops      626ops/s   0.0mb/s    0.369ms/op [0.019ms - 45.486ms]
-deletefile1          37545ops      626ops/s   0.0mb/s    0.617ms/op [0.030ms - 42.533ms]
-82.061: IO Summary: 487960 ops 8131.840 ops/s 1251/1251 rd/wr  43.0mb/s 1.952ms/op
-82.061: Shutting down processes
+0.002: Varmail Version 3.0 personality successfully loaded
+0.002: Populating and pre-allocating filesets
+0.505: bigfileset populated: 819200 files, avg. dir. width = 1000000, avg. dir. depth = 1.0, 0 leafdirs, 25634.444MB total size
+0.505: Removing bigfileset tree (if exists)
+0.507: Pre-allocating directories in bigfileset tree
+0.508: Pre-allocating files in bigfileset tree
+23.360: Waiting for pre-allocation to finish (in case of a parallel pre-allocation)
+23.361: Population and pre-allocation of filesets completed
+23.361: Starting 1 filereader instances
+24.371: Running...
+84.377: Run took 60 seconds...
+84.378: Per-Operation Breakdown
+closefile4           38270ops      638ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.025ms]
+readfile4            38270ops      638ops/s  20.0mb/s    3.034ms/op [0.006ms - 169.901ms]
+openfile4            38274ops      638ops/s   0.0mb/s    0.153ms/op [0.004ms - 34.286ms]
+closefile3           38274ops      638ops/s   0.0mb/s    0.005ms/op [0.001ms - 0.047ms]
+fsyncfile3           38274ops      638ops/s   0.0mb/s    8.863ms/op [3.422ms - 192.563ms]
+appendfilerand3      38278ops      638ops/s   5.0mb/s    0.151ms/op [0.003ms - 42.614ms]
+readfile3            38278ops      638ops/s  19.9mb/s    2.957ms/op [0.005ms - 206.593ms]
+openfile3            38284ops      638ops/s   0.0mb/s    0.118ms/op [0.003ms - 34.272ms]
+closefile2           38284ops      638ops/s   0.0mb/s    0.004ms/op [0.001ms - 0.031ms]
+fsyncfile2           38284ops      638ops/s   0.0mb/s    9.042ms/op [3.782ms - 54.228ms]
+appendfilerand2      38286ops      638ops/s   5.0mb/s    0.077ms/op [0.005ms - 35.196ms]
+createfile2          38286ops      638ops/s   0.0mb/s    0.207ms/op [0.014ms - 42.677ms]
+deletefile1          38286ops      638ops/s   0.0mb/s    0.362ms/op [0.021ms - 35.207ms]
+84.378: IO Summary: 497628 ops 8293.117 ops/s 1276/1276 rd/wr  49.9mb/s 1.921ms/op
+84.378: Shutting down processes
